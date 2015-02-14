@@ -53,7 +53,7 @@ use(homeless1)
 
 summ(homeless1$edad)
 tab1(homeless1$edad,graph=FALSE)
-summ(homeless1$edad)#aqui podemos ver el grafico con la distribucion segun edad
+summ(homeless1$edad,graph=FALSE)#aqui podemos ver el grafico con la distribucion segun edad
 
 mean(homeless1$edad,na.rm=TRUE)#n.a es para no considere los valores perdidos 
 sd(homeless1$edad,na.rm=TRUE)
@@ -99,10 +99,10 @@ plot(density(homeless1$edad, col="blue",na.rm=TRUE), main="",ylab="Densidad de K
 mtext("Frecuencia",side=4, las=3, line=2)
 
 use(homeless1)
-tab1(homeless1$edad)
-tab1(homeless1$sexo)
-tab1(homeless1$grado_Instruccion)
-tab1(homeless1$estado_civil)
+tab1(homeless1$edad,graph=FALSE))
+tab1(homeless1$sexo,graph=FALSE))
+tab1(homeless1$grado_Instruccion,graph=FALSE))
+tab1(homeless1$estado_civil,graph=FALSE))
 tab1(homeless1$ubicacion,graph=FALSE)
 
 ### 1 CARPAM; 2 Hospederia; 3 EGRESADO
